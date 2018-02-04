@@ -12,6 +12,7 @@ import './less/index.less'
 //导入自己写的模块
 //路由实例,可以直接导入文件夹，不用一个个导入
 import router from './router'
+import css from './css/style.css'
 //根组件
 import App from './App'
 //接口配置
@@ -20,6 +21,11 @@ import api from './js/api-config.js'
 //统一use启动vue插件
 Vue.use(Vuex)
 Vue.use(ElementUI)
+
+//导入自己写的插件
+import Myfilter from './filter'
+//use启动自己写的插件
+Vue.use(Myfilter)
 
 // 统一添加配置,一配置, 以后所有的请求就会自动使用这个域名
 axios.defaults.baseURL = 'http://localhost:8899'

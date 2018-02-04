@@ -42,7 +42,7 @@ export default function(to, from, next) {
             next({ name: 'login', query: { nextPage: to.fullPath } });
         }
         else {
-            console.log(111);
+            // console.log(111)
             next();
         }
     });

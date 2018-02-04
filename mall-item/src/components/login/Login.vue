@@ -51,7 +51,7 @@
                 // 表单校验规则
                 rules: {
                     uname: [ 
-                    // required--是否必填，==true 时 前面有个 *标注
+                    // required--是否必填，==true 时 前面有个 * 号
                         { required: true, message: '请填写账号', trigger: 'blur' },
                         { min: 5, max: 18, message: '账号在5~18位', trigger: 'blur' },
                         { validator: unameFn, trigger: 'blur' } 
